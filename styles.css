@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto+Condensed:wght@400;700&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
+/*------------------------ header -----------------------------*/
 header {
     background-color: #292f33;
     display: flex;
@@ -23,6 +23,44 @@ header {
     color: #d4d9d3;
     font-size: 1.8rem;
 }
+
+/*--------------------- hero section--------------------------- */
+
+.hero {
+    height: 90vh;
+    background-image: url('/assets/header_bg.jpeg');
+    background-size: cover;
+    background-position: 50% 100%;
+    position: relative;
+}
+.hero-1 {
+    background-color: #292f33;
+    width: 599px;
+    height: 405px;
+    position: absolute;
+    margin-left: 130px;
+    bottom: 0;
+    padding: 10px 30px;
+}
+.hero-1 > h1 {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #ffffff;
+    font-size: 5.1rem;
+    margin: 25px 0 0;
+}
+.hero-1 > p {
+    font-family: 'Open Sans', sans-serif;
+    color: #ffffff;
+    margin: 20px 0 0;
+    line-height: 1.8rem;
+}
+
+
+
+
+
+
+
 
 @media (min-width: 768px) {
     header {
