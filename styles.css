@@ -63,6 +63,7 @@ header {
 .fix_parent {
     display: flex;
     position: relative;
+    justify-content: space-between;
 }
 .fix_left {
     flex: 0.5;
@@ -89,8 +90,8 @@ header {
 .fix_left > p{
     font-family: 'Open Sans', sans-serif;
     margin: 1.8rem 0;
-    margin-right: 16px;
-    line-height: 28px;
+    /* width: 500px; */
+    line-height: 25px;
 }
 .fix_left > button {
     padding: 10px 30px;
@@ -102,13 +103,54 @@ header {
 }
 .fix_right {
     position: relative;
+    flex: 0.5;
+   
+}
+.underlay {
+    width: 370px;
+    height: 320px;
+    margin-top: -430px;
+  margin-left: 135px;
+  background-color: #292f33b6;
+  /* opacity: 0.7; */
 }
 .fix_right > img {
    width: 370px;
    margin-top: -200px;
-   position: absolute;
-  margin-left: 120px;
-  background-color: #000000;
+   /* position: absolute; */
+  margin-left: 100px;
+
+}
+.fix_right > .overlay {
+position: relative;
+background-color: #292f33;
+height: 140px;
+width: 140px;
+color: #ffffff;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin-left: 60px;
+z-index: 1;
+}
+.fix_right > .overlay > h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 4rem;
+}
+.fix_right > .overlay > p {
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+   
+}
+
+.fix_right > p {
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    margin-top: 50px;
+    margin-left: 50px;
+    width: 60%;
+
 }
 
 @media (min-width: 768px) {
