@@ -13,6 +13,9 @@ header {
     justify-content: space-between;
     align-items: center;
 }
+.logo {
+    margin-left: 29px;
+}
 .logo > a {
     font-family: 'Roboto Condensed', sans-serif;
     color: #ffffff;
@@ -38,7 +41,7 @@ header {
     width: 599px;
     height: 405px;
     position: absolute;
-    margin-left: 130px;
+    margin-left: 150px;
     bottom: 0;
     padding: 10px 30px;
 }
@@ -55,12 +58,58 @@ header {
     line-height: 1.8rem;
 }
 
+/* --------------------clear_fix -------------------------*/
 
+.fix_parent {
+    display: flex;
+    position: relative;
+}
+.fix_left {
+    flex: 0.5;
+    margin-left: 150px;
+}
+.fix_left div {
+    background-color: #e0e7ec;
+    width: 100px;
+    height: 100px;
+}
+.fix_left div > h2 {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #151414;
+    font-size: 2.2rem;
+    width: 300px;
+    margin-left: 1rem;
+}
 
+.fix_left div > h2:first-child {
+    margin-top: 2rem;
+    width: 400px;
+}
 
-
-
-
+.fix_left > p{
+    font-family: 'Open Sans', sans-serif;
+    margin: 1.8rem 0;
+    margin-right: 16px;
+    line-height: 28px;
+}
+.fix_left > button {
+    padding: 10px 30px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #b8c6d0;
+    color: #000000;
+    font-size: 16px;
+    border: none;
+}
+.fix_right {
+    position: relative;
+}
+.fix_right > img {
+   width: 370px;
+   margin-top: -200px;
+   position: absolute;
+  margin-left: 120px;
+  background-color: #000000;
+}
 
 @media (min-width: 768px) {
     header {
