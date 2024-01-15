@@ -31,7 +31,7 @@ header {
 
 .hero {
     height: 90vh;
-    background-image: url('./assets/header_bg.jpeg');
+    background-image: url('../assets/header_bg.jpeg');
     background-size: cover;
     background-position: 50% 100%;
     position: relative;
