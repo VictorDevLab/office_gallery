@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto+Condensed:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&family=Roboto+Condensed:wght@400;700&display=swap');
 
 * {
     margin: 0;
@@ -152,6 +152,82 @@ z-index: 1;
     width: 60%;
 
 }
+
+/* ---------------services-------------------*/
+/* .services {
+    display: flex;
+    justify-content: center;
+} */
+.services > .services_p > div > h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+.services > .services_p {
+    display: flex;
+    padding-left: 140px;
+    margin-top: 67px;
+    margin-bottom: 20px;
+}
+.services .services_p > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+.services .services_p > div > .fa-solid {
+    color: #edbf91;
+    font-size: 3.5rem;
+    margin: 14px 49px;
+}
+
+/* ---------------------gallery --------------------*/
+.gallery {
+    background-color: #f5f8fa;
+}
+.gallery > .gallery_1 {
+    /* margin-left: 145px; */
+    padding-top: 70px;
+}
+.gallery >.gallery_1 > .gallery_description {
+    text-align: center;
+}
+.gallery >.gallery_1 > .gallery_description h2{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 35px;
+}
+.gallery >.gallery_1 > .gallery_description p {
+    font-family: 'Open Sans', sans-serif;
+    margin: 14px auto;
+    width: 60%;
+    line-height: 30px;
+}
+.gallery > .gallery_1 > .display_images {
+display: flex;
+justify-content: flex-start;
+gap: 30px;
+margin-left: 145px;
+padding-top: 45px;
+padding-bottom: 40px;
+}
+.gallery > .gallery_1 > .display_images > img {
+height: 340px;
+width: 250px;
+object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (min-width: 768px) {
     header {
