@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&family=Roboto+Condensed:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&family=Roboto+Condensed:wght@400;700;900&display=swap');
 
 * {
     margin: 0;
@@ -31,7 +31,7 @@ header {
 
 .hero {
     height: 90vh;
-    background-image: url('/assets/header_bg.jpeg');
+    background-image: url('./assets/header_bg.jpeg');
     background-size: cover;
     background-position: 50% 100%;
     position: relative;
@@ -223,6 +223,7 @@ object-fit: cover;
 display: flex;
 background-color: #292f33;
 height: 500px;
+margin-bottom: 200px;
 }
 .features >  .features_left {
     flex: 0.5;
@@ -279,6 +280,166 @@ margin-top: 30px;
     width: 450px;
     margin-left: 70px;
 }
+
+/* ---------------------offices ------------------------*/
+
+.offices {
+    display: flex;
+    justify-content: center;
+}
+.offices > div {
+    display: flex;
+    padding: 30px 0;
+    flex-wrap: wrap;
+}
+.offices > div img {
+    width: 340px;
+    height: 345px;
+    object-fit: cover;
+}
+
+/* ------------------design------------------- */
+.design {
+    display: flex;
+}
+.design > .left_design {
+margin-left: 145px;
+}
+.design > .left_design > h2 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 35px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.design > .left_design > p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+}
+.design > .left_design > p > span {
+    font-size: 40px;
+    font-weight: 900;
+    color: #edbf91;
+    margin-right: 20px;
+}
+.design >.right_design {
+    position: relative;
+}
+.design > .right_design > div {
+    width: 200px;
+    height: 380px;
+    background-color: #edbf91;
+    margin-left: 630px;
+    position: relative;
+}
+.design > .right_design img {
+width: 480px;
+height: 380px;
+object-fit: cover;
+margin-left: 300px;
+margin-top: -334px;
+position: relative;
+}
+
+.left_design > div {
+    background-color: #e0e7ec;
+    width: 100px;
+    height: 100px;
+}
+
+/* --------------------layout-------------- */
+
+.layout {
+    display: flex;
+    background-color: #f5f8fa;
+}
+.layout > .left_layout {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-left: 145px;
+}
+.layout > .left_layout >img {
+    height: 250px;
+    width: 230px;
+    object-fit: cover;
+}
+.layout > .right_layout {
+    padding-left: 100px;
+}
+.layout > .right_layout > h2 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 35px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.layout > .right_layout > p {
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 20px;
+}
+.layout > .right_layout > button {
+    padding: 10px 30px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #b8c6d0;
+    color: #000000;
+    font-size: 16px;
+    border: none;
+    margin-top: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
