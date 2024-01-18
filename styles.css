@@ -8,6 +8,9 @@
 button {
     cursor: pointer !important;
 }
+body {
+    overflow-x: hidden;
+}
 /*------------------------ header -----------------------------*/
 header {
     background-color: #292f33;
@@ -98,8 +101,10 @@ header {
 }
 .fix_left {
     /* flex: 0.5; */
+    padding: 10px 90px;
+    padding-left: 160px;
     /* margin-left: 150px; */
-    margin-left: 250px;
+    /* margin-left: 250px; */
 }
 .fix_left div {
     background-color: #e0e7ec;
@@ -323,8 +328,8 @@ justify-content: space-around;
 }
 .features >  .features_left {
     /* flex: 0.5; */
-    margin-left: 145px;
-    position: relative;
+    /* margin-left: 145px; */
+    /* position: relative; */
 }
 .features > .features_left > div {
     height: 430px;
@@ -339,9 +344,12 @@ justify-content: space-around;
     width: 476px;
     height: 435px;
     object-fit: cover;
-    margin-top: -370px;
+    margin-top: 70px;
     margin-left: 40px;
-    position: relative;
+    /* position: relative; */
+} 
+.features > .features_right {
+    width: 50%;
 }
 .features > .features_right > .right_flex {
 padding: 80px;
@@ -357,7 +365,7 @@ color: #f5f8fa;
 /* margin: 20px auto 20px 0px; */
 width: 80%;
 text-align: left;
-margin-right: auto;
+/* margin-right: auto; */
 margin-top: 30px;
 
 }
@@ -382,7 +390,13 @@ margin-top: 30px;
     .features {
         flex-direction: column;
         height: 100vh;
+    
         /* margin-bottom: 200px; */
+        }
+        .features > .features_left {
+            /* padding: 50px;
+            margin-top: 60px; */
+            text-align: center;
         }
      
         .features > .features_left > img {
@@ -390,14 +404,19 @@ margin-top: 30px;
             height: 355px;
             margin: 10px auto;
             object-fit: cover;
-            margin-right: auto;
+            margin-top: 400px;
+            
         }
         .features > .features_left > div {
            display: none;
         }
+        .features > .features_right  > .right_flex{
+            padding: 30px;
+        }
         .features > .features_right img {
             width: 300px;
-            margin-left: 70px;
+            margin-top: 150px;
+            /* margin-left: 70px; */
         }
         .features > .features_right p {
             font-family: 'Open Sans', sans-serif;
@@ -405,9 +424,12 @@ margin-top: 30px;
         /* margin: 20px auto 20px 0px; */
         width: 95%;
         text-align: left;
-        margin-right: auto;
+        /* margin-right: auto; */
         margin-top: 30px;
         
+        }
+        .features > .features_right {
+            width: 100%;
         }
 }
 /* ---------------------offices ------------------------*/
@@ -519,23 +541,41 @@ position: relative;
     display: flex;
     background-color: #f5f8fa;
     justify-content: space-around;
-    margin: 0px auto;
+    padding: 20px;
 }
 .layout > .left_layout {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-left: 145px;
-    flex: 0.5;
+    /* width: 45%; */
+    /* padding-left: 100px; */
 }
-.layout > .left_layout >img {
+.layout > .left_layout > div {
+    display: flex;
+    /* flex-wrap: wrap;
+    gap: 10px;
+    margin: 10px auto;
+   
+    flex: 0.5; */
+    flex-direction: column;
+}
+.layout > .left_layout > div > .div01 {
+    display: flex;
+    gap: 10px;
+}
+.layout > .left_layout > div > .div01 > img {
     height: 250px;
     width: 230px;
     object-fit: cover;
+    margin-top: 10px;
+  
+}
+.layout > .left_layout > div > .div02 > img {
+    height: 250px;
+    width: 230px;
+    object-fit: cover;
+  
 }
 .layout > .right_layout {
-    padding-left: 100px;
-    flex: 0.5;
+    padding-left: 10px;
+    /* width: 75%; */
 }
 .layout > .right_layout > h2 {
     font-family: 'Roboto Condensed', sans-serif;
@@ -547,7 +587,8 @@ position: relative;
 .layout > .right_layout > p {
     font-family: 'Open Sans', sans-serif;
     margin-top: 20px;
-    width: 70%;
+    width: 96%;
+    display: block;
     margin-bottom: 20px;
 }
 .layout > .right_layout > button {
@@ -568,12 +609,14 @@ position: relative;
     .layout > .right_layout > p {
         width: 90%;
     }
-    .layout > .left_layout {
+    .layout > .left_layout > div {
         display: flex;
         flex-wrap: wrap;
-    
-      
         /* flex: 0.5; */
+    }
+    .layout > .left_layout > div > .div01 {
+        flex-direction: column;
+        align-items: center;
     }
     .layout > .left_layout >img {
         height: 250px;
